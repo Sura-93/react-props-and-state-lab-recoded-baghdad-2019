@@ -48,7 +48,7 @@ onFindPetsClick = () =>
               <Filters onChangeType={this.onChangeType} onFindPetsClick ={this.onFindPetsClick} />
             </div>
             <div className="twelve wide column">
-              <PetBrowser />
+              <PetBrowser  onAdoptPet ={this.onAdoptPet}/>
             </div>
           </div>
         </div>
