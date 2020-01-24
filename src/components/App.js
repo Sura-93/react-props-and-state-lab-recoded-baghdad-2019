@@ -19,6 +19,12 @@ onChangeType = value => {
     type:value
   })
 }
+onFindPetsClick = () => 
+{
+  if (this.state.type === "all")  {
+    fetch('/api/pets')
+  }
+}
   render() {
     return (
       <div className="ui container">
