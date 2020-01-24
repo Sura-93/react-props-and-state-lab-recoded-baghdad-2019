@@ -30,7 +30,10 @@ onFindPetsClick = () =>
     })
   }
   else {
+   fetch('/api/pets?type=' + this.state.filters.type).then(resp=> resp.json).then(json => this.setState({
 
+     pets.json
+   }))
   }
 }
   render() {
