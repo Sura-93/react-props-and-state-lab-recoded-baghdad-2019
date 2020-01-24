@@ -22,7 +22,15 @@ onChangeType = value => {
 onFindPetsClick = () =>
 {
   if (this.state.type === "all")  {
-    fetch('/api/pets')
+    fetch('/api/pets'). then (resp => resp.json).then(json => {
+      console.log(json)
+      this.setState({
+        pets.json
+      })
+    })
+  }
+  else {
+     
   }
 }
   render() {
