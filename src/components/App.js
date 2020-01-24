@@ -30,7 +30,7 @@ onFindPetsClick = () =>
     })
   }
   else {
-     
+
   }
 }
   render() {
