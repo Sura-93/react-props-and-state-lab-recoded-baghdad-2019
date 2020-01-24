@@ -19,7 +19,7 @@ onChangeType = value => {
     type:value
   })
 }
-onFindPetsClick = () => 
+onFindPetsClick = () =>
 {
   if (this.state.type === "all")  {
     fetch('/api/pets')
