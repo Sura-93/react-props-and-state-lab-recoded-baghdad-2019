@@ -14,7 +14,11 @@ class App extends React.Component {
       }
     }
   }
-
+onChangeType = value => {
+  this.setState({
+    type:value
+  })
+}
   render() {
     return (
       <div className="ui container">
